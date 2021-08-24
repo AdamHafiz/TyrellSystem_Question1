@@ -9,7 +9,7 @@ const Player = ({playerNumber, data}) => {
         <div className='text-center text-3xl font-bold'>
             Player {playerNumber}
         </div>
-        <div className='justify-center flex '>
+        <div className='justify-center flex flex-wrap'>
             {
                 data.map((imageName, index)=>(
                     <Image imagesrc={imageName} key={index}/>
@@ -21,5 +21,5 @@ const Player = ({playerNumber, data}) => {
         </div>
      );
 }
- 
+
 export default Player;
