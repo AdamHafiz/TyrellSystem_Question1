@@ -19,7 +19,8 @@ const DeckForm = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className=" flex flex-col items-center justify-center h-screen">
+      <h1 className="p-5 text-xl ">PLEASE CHOOSE NUMBER OF PLAYER</h1>
       <form
         onSubmit={(e) => handleSubmit(e)}
         className="flex flex-col md:flex-row w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center "
@@ -29,7 +30,7 @@ const DeckForm = () => {
             onChange={(e) => setNumberPerson(e.target.value)}
             type="number"
             className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-            placeholder="Put integer"
+            placeholder="Number of player"
           />
 
           {error && (
